@@ -1,127 +1,40 @@
-# Expenses Tracker Admin - A Comprehensive Guide to Your Financial Management 🚀
+Expense Tracker
+A full-stack web application built using React.js and ASP.NET Core to manage expenses, users, and financial reports.
 
-![Expenses Tracker](https://img.shields.io/badge/Expenses%20Tracker%20Admin-ASP.NET%20Core%20%7C%20ReactJS%20%7C%20Bootstrap-blue)
+Tech Stack
+Frontend: React 16, React Router 5, Axios, Bootstrap
 
-Welcome to the **Expenses Tracker Admin** repository! This project helps you manage your expenses efficiently using **ASP.NET Core** and **ReactJS**. The user interface is crafted with **Bootstrap** for a clean look, and we utilize **JWT** for secure authentication. 
+Backend: .NET 5, Entity Framework Core, SQL Server, JWT Authentication
 
-You can download the latest release of this project from the [Releases section](https://github.com/justhayato/net-react-app/releases). 
+Features
+User login with JWT
 
-## Table of Contents
+Add, edit, and delete expenses
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Admin panel for user and category management
 
-## Introduction
+Dashboard with financial summary
 
-Managing finances can be challenging. The **Expenses Tracker Admin** application simplifies this task. It allows users to track their expenses, categorize them, and view detailed reports. This application is built on a robust tech stack that ensures performance and security.
+Frontend-backend integration using Axios
 
-## Features
+How to Run
+Backend:
 
-- **User Authentication**: Secure login and registration using JWT.
-- **Expense Tracking**: Add, edit, and delete expenses easily.
-- **Categorization**: Organize expenses into different categories for better analysis.
-- **Reports**: Generate detailed reports to visualize spending habits.
-- **Responsive Design**: A user-friendly interface that works on any device.
-- **Real-time Updates**: Instant feedback and updates on the user interface.
+Open server/Server.csproj in Visual Studio
 
-## Technologies Used
+Update the SQL connection string in appsettings.json
 
-This project leverages several technologies to provide a seamless experience:
+Press Ctrl + F5 to start the backend
 
-- **ASP.NET Core**: The backend framework that powers the API.
-- **ReactJS**: The frontend library that creates an interactive user interface.
-- **Bootstrap**: For responsive and modern UI design.
-- **SQL Server**: The database for storing user data and expenses.
-- **Axios**: For making HTTP requests to the backend.
-- **JWT**: For secure authentication and authorization.
-- **HTML/CSS**: For structuring and styling the application.
-- **React Router**: For navigation between different views.
+Frontend:
 
-## Installation
+Navigate to the client folder
 
-To set up the **Expenses Tracker Admin** application on your local machine, follow these steps:
+Run the following commands:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/justhayato/net-react-app.git
-   cd net-react-app
-   ```
+sql
+Copy code
+npm install --legacy-peer-deps
+npm start
 
-2. **Set Up the Backend**:
-   - Navigate to the backend folder.
-   - Restore the NuGet packages:
-     ```bash
-     dotnet restore
-     ```
-   - Update the connection string in `appsettings.json` to point to your SQL Server database.
-   - Run the application:
-     ```bash
-     dotnet run
-     ```
-
-3. **Set Up the Frontend**:
-   - Navigate to the frontend folder.
-   - Install the required packages:
-     ```bash
-     npm install
-     ```
-   - Start the React application:
-     ```bash
-     npm start
-     ```
-
-Now, the application should be running on your local machine. 
-
-## Usage
-
-After installation, you can access the application through your web browser. Here’s how to get started:
-
-1. **Create an Account**: Register a new user by filling out the registration form.
-2. **Log In**: Use your credentials to log in to the application.
-3. **Add Expenses**: Navigate to the expense section and start adding your expenses.
-4. **Categorize**: Assign categories to your expenses for better tracking.
-5. **View Reports**: Check the reports section to analyze your spending habits.
-
-## Contributing
-
-We welcome contributions to improve the **Expenses Tracker Admin** application. If you want to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Create a pull request.
-
-Please ensure that your code adheres to the existing style and includes relevant tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or feedback, feel free to reach out:
-
-- **GitHub**: [justhayato](https://github.com/justhayato)
-- **Email**: your-email@example.com
-
-Explore the latest releases and updates on the [Releases section](https://github.com/justhayato/net-react-app/releases). 
-
----
-
-Thank you for checking out the **Expenses Tracker Admin** repository! Your financial management journey starts here.
+I built this project from scratch while studying full-stack web development. I used an open-source project as a learning reference and applied my own design and logic.
